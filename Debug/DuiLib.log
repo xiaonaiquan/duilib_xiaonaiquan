@@ -1,0 +1,124 @@
+﻿生成启动时间为 2017/6/5 16:35:59。
+     1>项目“E:\visual studio 2012 Projects\DuiLib\DuiLib.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Visio Stdio 2012\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\DuiLib_d.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         D:\Visio Stdio 2012\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DuiLib_d.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Control\UIRollText.cpp Control\UIAnimation.cpp Control\UIColorPalette.cpp Control\UIFadeButton.cpp Control\UIGifAnim.cpp Control\UIGifAnimEx.cpp Control\UIGroupBox.cpp Control\UIHotKey.cpp Control\UIIPAddress.cpp Control\UIListEx.cpp Control\UIMenu.cpp Core\ControlFactory.cpp Core\UIResourceManager.cpp Layout\UIAnimationTabLayout.cpp UIlib.cpp Utils\DPI.cpp Utils\DragDropImpl.cpp Utils\TrayIcon.cpp Utils\UIShadow.cpp Utils\WinImplBase.cpp Utils\UIDelegate.cpp Utils\Utils.cpp Core\UIBase.cpp Core\UIContainer.cpp Core\UIControl.cpp Core\UIDlgBuilder.cpp Core\UIManager.cpp Core\UIMarkup.cpp Core\UIRender.cpp Layout\UIChildLayout.cpp Layout\UIHorizontalLayout.cpp Layout\UITabLayout.cpp Layout\UITileLayout.cpp Layout\UIVerticalLayout.cpp Control\UIActiveX.cpp Control\UIButton.cpp Control\UICombo.cpp Control\UIComboBox.cpp Control\UIDateTime.cpp Control\UIEdit.cpp Control\UIFlash.cpp Control\UILabel.cpp Control\UIList.cpp Control\UIOption.cpp Control\UIProgress.cpp Control\UIRichEdit.cpp Control\UIScrollBar.cpp Control\UISlider.cpp Control\UIText.cpp Control\UITreeView.cpp Control\UIWebBrowser.cpp
+         UIWebBrowser.cpp
+         UITreeView.cpp
+         UIText.cpp
+         UISlider.cpp
+         UIScrollBar.cpp
+         UIRichEdit.cpp
+         UIProgress.cpp
+         UIOption.cpp
+         UIList.cpp
+         UILabel.cpp
+         UIFlash.cpp
+         UIEdit.cpp
+         UIDateTime.cpp
+         UIComboBox.cpp
+         UICombo.cpp
+         UIButton.cpp
+         UIActiveX.cpp
+         UIVerticalLayout.cpp
+         UITileLayout.cpp
+         UITabLayout.cpp
+         正在生成代码...
+         正在编译...
+         UIHorizontalLayout.cpp
+         UIChildLayout.cpp
+         UIRender.cpp
+         UIMarkup.cpp
+         UIManager.cpp
+         UIDlgBuilder.cpp
+         UIControl.cpp
+         UIContainer.cpp
+         UIBase.cpp
+         Utils.cpp
+         UIDelegate.cpp
+         WinImplBase.cpp
+         UIShadow.cpp
+         TrayIcon.cpp
+         DragDropImpl.cpp
+         DPI.cpp
+         UIlib.cpp
+         UIAnimationTabLayout.cpp
+         UIResourceManager.cpp
+         ControlFactory.cpp
+         正在生成代码...
+         正在编译...
+         UIMenu.cpp
+         UIListEx.cpp
+         UIIPAddress.cpp
+         UIHotKey.cpp
+         UIGroupBox.cpp
+         UIGifAnimEx.cpp
+         UIGifAnim.cpp
+         UIFadeButton.cpp
+         UIColorPalette.cpp
+         UIAnimation.cpp
+         UIRollText.cpp
+         正在生成代码...
+         D:\Visio Stdio 2012\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Utils\XUnzip.cpp
+         XUnzip.cpp
+       Lib:
+         D:\Visio Stdio 2012\VC\bin\Lib.exe /OUT:"E:\visual studio 2012 Projects\DuiLib\Bin\DuiLib_d.lib" /NOLOGO Debug\UIRollText.obj
+         Debug\UIAnimation.obj
+         Debug\UIColorPalette.obj
+         Debug\UIFadeButton.obj
+         Debug\UIGifAnim.obj
+         Debug\UIGifAnimEx.obj
+         Debug\UIGroupBox.obj
+         Debug\UIHotKey.obj
+         Debug\UIIPAddress.obj
+         Debug\UIListEx.obj
+         Debug\UIMenu.obj
+         Debug\ControlFactory.obj
+         Debug\UIResourceManager.obj
+         Debug\UIAnimationTabLayout.obj
+         Debug\StdAfx.obj
+         Debug\UIlib.obj
+         Debug\DPI.obj
+         Debug\DragDropImpl.obj
+         Debug\TrayIcon.obj
+         Debug\UIShadow.obj
+         Debug\WinImplBase.obj
+         Debug\UIDelegate.obj
+         Debug\Utils.obj
+         Debug\XUnzip.obj
+         Debug\UIBase.obj
+         Debug\UIContainer.obj
+         Debug\UIControl.obj
+         Debug\UIDlgBuilder.obj
+         Debug\UIManager.obj
+         Debug\UIMarkup.obj
+         Debug\UIRender.obj
+         Debug\UIChildLayout.obj
+         Debug\UIHorizontalLayout.obj
+         Debug\UITabLayout.obj
+         Debug\UITileLayout.obj
+         Debug\UIVerticalLayout.obj
+         Debug\UIActiveX.obj
+         Debug\UIButton.obj
+         Debug\UICombo.obj
+         Debug\UIComboBox.obj
+         Debug\UIDateTime.obj
+         Debug\UIEdit.obj
+         Debug\UIFlash.obj
+         Debug\UILabel.obj
+         Debug\UIList.obj
+         Debug\UIOption.obj
+         Debug\UIProgress.obj
+         Debug\UIRichEdit.obj
+         Debug\UIScrollBar.obj
+         Debug\UISlider.obj
+         Debug\UIText.obj
+         Debug\UITreeView.obj
+         Debug\UIWebBrowser.obj
+         DuiLib.vcxproj -> E:\visual studio 2012 Projects\DuiLib\Bin\DuiLib_d.lib
+     1>已完成生成项目“E:\visual studio 2012 Projects\DuiLib\DuiLib.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.38
