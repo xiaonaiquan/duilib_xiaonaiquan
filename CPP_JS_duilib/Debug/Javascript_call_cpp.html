@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=gb2312>
+    <title></title>
+    <script type="text/javascript">
+        function CallCpp(){
+            //JavaScriptCallCpp 是C++中函数，
+            //与idispimp.cpp文件中javaScriptName进行对应并且与DISPID_CallCppFromJs进行绑定
+            //alert("JavaScriptCallCpp from html"); 
+            window.external.JavaScriptCallCpp('123456', '654321', 'haha');
+        }
+        function Test() 
+        { 
+        	alert("HAHA, C++ call javascript"); 
+        }
+    </script>
+</head>
+<body>
+	<P align=center>&nbsp;</P>
+	<P align=center>&nbsp;</P>
+	<P align=center>&nbsp;</P>
+	<P align=center>&nbsp;</P>
+    <DIV align=center><button onclick="CallCpp()">JavaScript Call C++</button></DIV>
+</body>
+</html>

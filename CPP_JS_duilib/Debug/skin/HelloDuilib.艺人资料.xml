@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="595,600" sizebox="" caption="0,0,0,600" disabledfontcolor="" defaultfontcolor="" linkfontcolor="" linkhoverfontcolor="" selectedcolor="">
+	<Font id="0" name="微软雅黑" size="18"/>
+	<Font id="1" name="微软雅黑" size="12" bold="true"/>
+	<VerticalLayout pos="0,0,599,600" bkcolor="#FFFFFFFF" bkcolor2="#FFFFFFFF" bordercolor="#00008080" focusbordercolor="#00800000" bordersize="2">
+		<HorizontalLayout name="hlTitle" pos="0,0,596,30" bkcolor="#F1DED2D2">
+			<Button name="closebtn" pos="556,2,593,27" float="true" normalimage="Close.png" hotimage="Close.hover.png" pushedimage="Close.press.png"/>
+			<Label name="labelTitle" pos="15,6,154,28" float="true" text="艺人资料"/>
+		</HorizontalLayout>
+		<HorizontalLayout pos="0,0,594,221">
+			<Label name="labelHeadImg" pos="14,17,135,138" float="true" bkimage="u1314.png"/>
+			<Label name="labelName" pos="160,17,263,47" float="true" text="暖心姑娘" font="0"/>
+			<Label name="labelSex" pos="271,17,301,47" float="true" bkimage="u1308.png"/>
+			<Label name="labelLevel" pos="313,20,382,42" float="true" bkcolor="#FFFF0000" bordercolor="#F4AAA7A7" bordersize="1" borderround="25,25" text="至尊主播" align="center"/>
+			<Button name="btnGuanZhu" pos="501,18,561,48" float="true" bordercolor="#F4AAA7A7" bordersize="1" borderround="30,30" text="关注"/>
+			<Label name="labelRenQiZhi" pos="160,63,220,93" float="true" text="1021" font="0"/>
+			<Label pos="247,63,307,93" float="true" text="人气值"/>
+			<Label name="labelMeiLiZhi" pos="338,63,398,93" float="true" text="5456" font="0"/>
+			<Label pos="430,63,490,93" float="true" text="魅力值"/>
+			<Label pos="160,107,243,137" float="true" text="所属公会 :"/>
+			<Label name="labelGongHui" pos="247,105,414,135" float="true" text="娱家传媒"/>
+			<Label pos="160,146,243,176" float="true" text="直播间ID :"/>
+			<Label name="labelZhiBoJianID" pos="247,144,414,174" float="true" text="205"/>
+			<Label name="labelQianMing" pos="160,181,498,211" float="true" text="总有一天你会站在最高的地方，活成自己希望的模样" font="1"/>
+			<Button name="btnChangeHeadImg" pos="36,157,123,187" float="true" bordercolor="#F4AAA7A7" bordersize="1" borderround="30,30" text="更改头像"/>
+		</HorizontalLayout>
+		<HorizontalLayout pos="0,0,590,50" bkcolor="#F1DED2D2">
+			<Label name="labelFansCount" pos="33,8,180,38" float="true" text="粉丝（123456）"/>
+		</HorizontalLayout>
+		<VerticalLayout pos="0,0,591,302">
+			<List name="listFans" pos="0,0,590,303" vscrollbar="true">
+				<ListHeader pos="0,0,0,50" bkcolor="#E8DED2D2">
+					<ListHeaderItem name="ListHeadItemPlayerName" pos="0,0,100,0" text="玩家名" sepwidth="1" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png"/>
+					<ListHeaderItem name="ListHeadItemZongQinMiDu" pos="0,0,260,0" text="总亲密度" sepwidth="1" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'"/>
+					<ListHeaderItem name="ListHeadItemChaKanZiLiao" pos="0,0,230,0" text="查看资料" sepwidth="1" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'"/>
+				</ListHeader>
+			</List>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>
+

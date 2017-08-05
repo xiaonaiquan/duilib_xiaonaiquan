@@ -1,0 +1,95 @@
+﻿生成启动时间为 2017-1-29 1:45:38。
+     1>项目“G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\DuiLib.2016-12-1_144312\DuiLib.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Build\Debug_u/DuiLib.pch" /Fo".\Build\Debug_u\\" /Fd".\Build\Debug_u\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Build\Debug_u/DuiLib.pch" /Fo".\Build\Debug_u\\" /Fd".\Build\Debug_u\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Control\UITreeView.cpp UIlib.cpp Utils\WinImplBase.cpp Utils\UIDelegate.cpp Utils\Utils.cpp Utils\WndShadow.cpp Core\UIBase.cpp Core\UIContainer.cpp Core\UIControl.cpp Core\UIDlgBuilder.cpp Core\UIManager.cpp Core\UIMarkup.cpp Core\UIRender.cpp Layout\UIChildLayout.cpp Layout\UIHorizontalLayout.cpp Layout\UITabLayout.cpp Layout\UITileLayout.cpp Layout\UIVerticalLayout.cpp Control\UIActiveX.cpp Control\UIButton.cpp Control\UICheckBox.cpp Control\UICombo.cpp Control\UIDateTime.cpp Control\UIEdit.cpp Control\UIGifAnim.cpp Control\UILabel.cpp Control\UIList.cpp Control\UIOption.cpp Control\UIProgress.cpp Control\UIRichEdit.cpp Control\UIScrollBar.cpp Control\UISlider.cpp Control\UIText.cpp Control\UIWebBrowser.cpp
+         UIWebBrowser.cpp
+         UIText.cpp
+         UISlider.cpp
+         UIScrollBar.cpp
+         UIRichEdit.cpp
+         UIProgress.cpp
+         UIOption.cpp
+         UIList.cpp
+         UILabel.cpp
+         UIGifAnim.cpp
+         UIEdit.cpp
+         UIDateTime.cpp
+         UICombo.cpp
+         UICheckBox.cpp
+         UIButton.cpp
+         UIActiveX.cpp
+         UIVerticalLayout.cpp
+         UITileLayout.cpp
+         UITabLayout.cpp
+         UIHorizontalLayout.cpp
+         正在生成代码...
+         正在编译...
+         UIChildLayout.cpp
+         UIRender.cpp
+         UIMarkup.cpp
+         UIManager.cpp
+         UIDlgBuilder.cpp
+         UIControl.cpp
+         UIContainer.cpp
+         UIBase.cpp
+         WndShadow.cpp
+         Utils.cpp
+         UIDelegate.cpp
+         WinImplBase.cpp
+         UIlib.cpp
+         UITreeView.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Build\Debug_u\\" /Fd".\Build\Debug_u\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Utils\stb_image.c
+         stb_image.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Build\Debug_u\\" /Fd".\Build\Debug_u\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Utils\XUnzip.cpp
+         XUnzip.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\DuiLib.2016-12-1_144312\.\Build\Debug_u\DuiLib.dll) does not match the Linker's OutputFile property value (G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\bin\DuiLib_ud.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(DuiLib) does not match the Linker's OutputFile property value (DuiLib_ud). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1197,5): warning MSB8030: The linker switch "Minimum Required Version" requires "SubSystem" to be set.  Without "SubSystem", the "Minimum Required Version" would not be passed to linker and could prevent to the output binary from running on older Operating Systems.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin/DuiLib_ud.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:".\Build\Debug_u\DuiLib.pdb" /TLBID:1 /BASE:"0x11000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"../Lib/DuiLib_ud.lib" /MACHINE:X86 /SAFESEH /DLL .\Build\Debug_u\UITreeView.obj
+         .\Build\Debug_u\StdAfx.obj
+         .\Build\Debug_u\UIlib.obj
+         .\Build\Debug_u\WinImplBase.obj
+         .\Build\Debug_u\stb_image.obj
+         .\Build\Debug_u\UIDelegate.obj
+         .\Build\Debug_u\Utils.obj
+         .\Build\Debug_u\WndShadow.obj
+         .\Build\Debug_u\XUnzip.obj
+         .\Build\Debug_u\UIBase.obj
+         .\Build\Debug_u\UIContainer.obj
+         .\Build\Debug_u\UIControl.obj
+         .\Build\Debug_u\UIDlgBuilder.obj
+         .\Build\Debug_u\UIManager.obj
+         .\Build\Debug_u\UIMarkup.obj
+         .\Build\Debug_u\UIRender.obj
+         .\Build\Debug_u\UIChildLayout.obj
+         .\Build\Debug_u\UIHorizontalLayout.obj
+         .\Build\Debug_u\UITabLayout.obj
+         .\Build\Debug_u\UITileLayout.obj
+         .\Build\Debug_u\UIVerticalLayout.obj
+         .\Build\Debug_u\UIActiveX.obj
+         .\Build\Debug_u\UIButton.obj
+         .\Build\Debug_u\UICheckBox.obj
+         .\Build\Debug_u\UICombo.obj
+         .\Build\Debug_u\UIDateTime.obj
+         .\Build\Debug_u\UIEdit.obj
+         .\Build\Debug_u\UIGifAnim.obj
+         .\Build\Debug_u\UILabel.obj
+         .\Build\Debug_u\UIList.obj
+         .\Build\Debug_u\UIOption.obj
+         .\Build\Debug_u\UIProgress.obj
+         .\Build\Debug_u\UIRichEdit.obj
+         .\Build\Debug_u\UIScrollBar.obj
+         .\Build\Debug_u\UISlider.obj
+         .\Build\Debug_u\UIText.obj
+         .\Build\Debug_u\UIWebBrowser.obj
+            正在创建库 ../Lib/DuiLib_ud.lib 和对象 ../Lib/DuiLib_ud.exp
+         DuiLib.vcxproj -> G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\DuiLib.2016-12-1_144312\.\Build\Debug_u\DuiLib.dll
+     1>已完成生成项目“G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\DuiLib.2016-12-1_144312\DuiLib.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.26

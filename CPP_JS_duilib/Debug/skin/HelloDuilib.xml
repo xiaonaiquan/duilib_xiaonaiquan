@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="800,600" caption="0,0,0,35">
+	<VerticalLayout bordercolor="#CB7519EC" focusbordercolor="#CB7519EC" bordersize="1" inset="1,1,1,1">
+		<VerticalLayout >
+			<HorizontalLayout name="hlTitle" pos="0,0,0,30" bkcolor="#F1DED2D2">
+				<Button name="closebtn" pos="759,3,796,28" float="true" normalimage="Close.png" hotimage="Close.hover.png" pushedimage="Close.press.png"/>
+				<Label name="labelTitle" pos="15,6,154,28" float="true" text="DuiLib WebBrowser"/>
+			</HorizontalLayout>
+			<HorizontalLayout pos="0,0,0,50" bkcolor="#D24D5CD1">
+				<Edit name="editURL" pos="0,0,500,30" padding="10,10,0,0" text="file:///D:/JiFei/Program_Me/VC2013_Projects/prjTest_CPP_JS_Inter_Call_In_DuiLib/Debug/Javascript_call_cpp.html" tooltip="Input URL here"/>
+				<Button name="btnGo" pos="0,0,50,30" padding="10,10,0,0" bkcolor="#F2E41D47" text="Go" textcolor="#FFFFFFFF"/>
+				<Button name="btnCallJS" pos="0,0,50,30" padding="10,10,0,0" bkcolor="#F2E41D47" text="Call JS" textcolor="#FFFFFFFF"/>
+			</HorizontalLayout>
+			<WebBrowserEx name="wb" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="true" homepage="file:///G:/Projects_Me/VC2013_Projects/prjTest_CPP_JS_Inter_Call_In_DuiLib/Debug/Javascript_call_cpp.html" autonavi="true"/>
+		</VerticalLayout >
+	</VerticalLayout>
+</Window>
+
