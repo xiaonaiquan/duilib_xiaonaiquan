@@ -1109,6 +1109,18 @@ void CRichEditUI::SetMultiLine(bool bMultiLine)
 
 bool CRichEditUI::IsWantTab()
 {
+	if (m_bWantTab == false)
+	{
+			if (GetText() != L"")
+			{
+				if (IsFocused())
+				{
+					SetSelAll();
+					SetFocus();
+				}
+			}
+	}
+
     return m_bWantTab;
 }
 
@@ -2513,7 +2525,7 @@ LRESULT CRichEditUI::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, boo
     if( (uMsg >= WM_MOUSEFIRST && uMsg <= WM_MOUSELAST) || uMsg == WM_SETCURSOR ) {
         if( !m_pTwh->IsCaptured() ) {
             switch (uMsg) {
-            case WM_LBUTTONDOWN:
+			case WM_LBUTTONDOWN:
             case WM_LBUTTONUP:
             case WM_LBUTTONDBLCLK:
             case WM_RBUTTONDOWN:
@@ -2540,8 +2552,8 @@ LRESULT CRichEditUI::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, boo
         }
         if( dwHitResult != HITRESULT_HIT ) return 0;
         if( uMsg == WM_SETCURSOR ) bWasHandled = false;
-        else if( uMsg == WM_LBUTTONDOWN || uMsg == WM_LBUTTONDBLCLK || uMsg == WM_RBUTTONDOWN ) {
-            SetFocus();
+		else if (uMsg == WM_LBUTTONDOWN || uMsg == WM_LBUTTONDBLCLK || uMsg == WM_RBUTTONDOWN) {
+			SetFocus();
         }
     }
 #ifdef _UNICODE
@@ -2549,7 +2561,9 @@ LRESULT CRichEditUI::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, boo
 #else
     else if( (uMsg >= WM_KEYFIRST && uMsg <= WM_KEYLAST) || uMsg == WM_CHAR || uMsg == WM_IME_CHAR ) {
 #endif
-        if( !IsFocused() ) return 0;
+        if( !IsFocused() ) 
+			return 0;
+		
     }
     else if( uMsg == WM_CONTEXTMENU ) {
         POINT pt = { GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam) };

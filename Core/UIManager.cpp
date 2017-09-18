@@ -2159,7 +2159,10 @@ namespace DuiLib {
 				pControl = info1.pLast;
 			}
 		}
-		if( pControl != NULL ) SetFocus(pControl);
+		if (pControl != NULL)
+		{
+			SetFocus(pControl);
+		}
 		m_bFocusNeeded = false;
 		return true;
 	}

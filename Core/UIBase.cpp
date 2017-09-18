@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-
+#include <stdio.h>
 #ifdef _DEBUG
 #include <shlwapi.h>
 #pragma comment(lib, "shlwapi.lib")
@@ -252,7 +252,11 @@ HWND CWindowWnd::Create(HWND hwndParent, LPCTSTR pstrName, DWORD dwStyle, DWORD 
     if( GetSuperClassName() != NULL && !RegisterSuperclass() ) return NULL;
     if( GetSuperClassName() == NULL && !RegisterWindowClass() ) return NULL;
     m_hWnd = ::CreateWindowEx(dwExStyle, GetWindowClassName(), pstrName, dwStyle, x, y, cx, cy, hwndParent, hMenu, CPaintManagerUI::GetInstance(), this);
-    ASSERT(m_hWnd!=NULL);
+	/*char szLog[512] = { 0 };
+	sprintf(szLog, "%ld", GetLastError());
+	OutputDebugStringA(szLog);*/
+
+	ASSERT(m_hWnd!=NULL);
     return m_hWnd;
 }
 
