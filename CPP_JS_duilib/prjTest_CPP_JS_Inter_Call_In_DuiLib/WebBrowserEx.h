@@ -22,5 +22,12 @@ public:
 	virtual HRESULT STDMETHODCALLTYPE Invoke(DISPID dispIdMember, REFIID riid, LCID lcid, WORD wFlags, 
 		DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
 	
+
+	__int64 SystemTimeToInt64(const SYSTEMTIME& itime);
+
+
+	SYSTEMTIME Int64ToSystemTime(const __int64& itime);
+
+	std::tm* gettm(__int64 timestamp);
 };
 

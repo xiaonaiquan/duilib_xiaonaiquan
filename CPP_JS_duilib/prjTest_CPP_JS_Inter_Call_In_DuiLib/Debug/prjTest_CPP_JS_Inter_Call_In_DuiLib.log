@@ -1,15 +1,27 @@
-﻿生成启动时间为 2017-1-29 1:59:03。
-     1>项目“G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.lib" /MACHINE:X86 Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.res
+﻿生成启动时间为 2017/11/6 17:40:28。
+     1>项目“E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\SoftWare\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\SoftWare\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HelloDuilibWnd.cpp prjTest_CPP_JS_Inter_Call_In_DuiLib.cpp WebBrowserEventHandlerEx.cpp WebBrowserEx.cpp
+         WebBrowserEx.cpp
+     1>e:\cpp_js_inter_call_in_duilib-master2\cpp_js_inter_call_in_duilib-master\prjtest_cpp_js_inter_call_in_duilib\webbrowserex.cpp(106): warning C4244: “初始化”: 从“DATE”转换到“__int64”，可能丢失数据
+         WebBrowserEventHandlerEx.cpp
+         prjTest_CPP_JS_Inter_Call_In_DuiLib.cpp
+         HelloDuilibWnd.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.res" prjTest_CPP_JS_Inter_Call_In_DuiLib.rc 
+       Link:
+         D:\SoftWare\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.lib" /MACHINE:X86 Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.res
          Debug\HelloDuilibWnd.obj
          Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.obj
          Debug\stdafx.obj
          Debug\WebBrowserEventHandlerEx.obj
          Debug\WebBrowserEx.obj
-         prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj -> G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.exe
-     1>已完成生成项目“G:\Projects_Me\VC2013_Projects\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj”(Build 个目标)的操作。
+         prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj -> E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\Debug\prjTest_CPP_JS_Inter_Call_In_DuiLib.exe
+     1>已完成生成项目“E:\CPP_JS_Inter_Call_In_DuiLib-master2\CPP_JS_Inter_Call_In_DuiLib-master\prjTest_CPP_JS_Inter_Call_In_DuiLib\prjTest_CPP_JS_Inter_Call_In_DuiLib.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.79
+已用时间 00:00:01.07

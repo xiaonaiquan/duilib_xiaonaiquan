@@ -8,12 +8,25 @@
             //JavaScriptCallCpp 是C++中函数，
             //与idispimp.cpp文件中javaScriptName进行对应并且与DISPID_CallCppFromJs进行绑定
             //alert("JavaScriptCallCpp from html"); 
+			
             window.external.JavaScriptCallCpp('123456', '654321', 'haha');
         }
+		function CallCpp2(){
+			var mydate = new Date()
+			alert(mydate.getTime());
+			
+			window.external.JavaScriptCallCpp2(mydate.getTime());
+		}
         function Test() 
         { 
         	alert("HAHA, C++ call javascript"); 
         }
+		function Test2(x)
+		{
+			//var num = x - y;  
+			
+            alert(x);  
+		}
     </script>
 </head>
 <body>
@@ -22,5 +35,6 @@
 	<P align=center>&nbsp;</P>
 	<P align=center>&nbsp;</P>
     <DIV align=center><button onclick="CallCpp()">JavaScript Call C++</button></DIV>
+	<DIV align=center><button onclick="CallCpp2()">JavaScript Call C++ 2</button></DIV>
 </body>
 </html>

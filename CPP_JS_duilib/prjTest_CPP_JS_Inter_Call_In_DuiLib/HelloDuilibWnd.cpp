@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "HelloDuilibWnd.h"
 
-
+#include <atlcomcli.h>
 
 #if 1
 DUI_BEGIN_MESSAGE_MAP(CHelloDuilibWnd, WindowImplBase)
@@ -83,12 +83,22 @@ void CHelloDuilibWnd::OnClick(TNotifyUI& msg)
 	}
 	else if (msg.pSender == m_pbtnCallJS)
 	{
-		VARIANT params[10];
-		VARIANT ret;
-		//获取页面window
-		IDispatch *pHtmlWindow = m_pWebBrowserEx->GetHtmlWindow();
-		//页面全局函数Test实际上是window的Test方法，
-		CWebBrowserUI::InvokeMethod(pHtmlWindow, _T("Test"), &ret, params, 0);
+		//VARIANT params[10];
+		//VARIANT ret;
+		////获取页面window
+		//IDispatch *pHtmlWindow = m_pWebBrowserEx->GetHtmlWindow();
+		////页面全局函数Test实际上是window的Test方法，
+		//CWebBrowserUI::InvokeMethod(pHtmlWindow, _T("Test"), &ret, params, 0);
+	
+		//VARIANT arg[1]= { CComVariant("asdasd") };
+
+		VARIANT arg[1];
+		arg[0].vt = VT_BSTR;
+		arg[0].bstrVal = CComBSTR("ADFSDFF").Detach();
+
+		VARIANT varRet;
+		m_pWebBrowserEx->InvokeMethod(m_pWebBrowserEx->GetHtmlWindow(), _T("Test2"), &varRet, arg, 1);
+		//int nResult = varRet.intVal;//-4  
 	}
 
 	__super::OnClick(msg);
