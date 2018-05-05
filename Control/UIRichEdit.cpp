@@ -1747,6 +1747,9 @@ void CRichEditUI::DoInit()
 		if (!m_bEnabled) {
 			m_pTwh->SetColor(m_pManager->GetDefaultDisabledColor());
 		}
+		TxSendMessage(EM_GETEVENTMASK, 0, 0, &lResult);
+		lResult |= ENM_CHANGE;
+		TxSendMessage(EM_SETEVENTMASK, 0, lResult, &lResult);
     }
 	
 	m_bInited= true;
