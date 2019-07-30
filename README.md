@@ -8,6 +8,10 @@ duilib
 修复方案：
 http://blog.csdn.net/xiaonaiquan/article/category/6986587
 
-修改了js和C++的交互，数据传递的正确性，C++调用js函数用什么数据类型将数据传递过去，之前写的存在数据对象可能已经不在的bug，编译的是debug版本。
+4.修改了js和C++的交互，数据传递的正确性，C++调用js函数用什么数据类型将数据传递过去，之前写的存在数据对象可能已经不在的bug，编译的是debug版本。
 
-增加了Dpi Demo，来适应各种DPi 下的程序状态
+5.增加了Dpi Demo，来适应各种DPI下的程序状态
+
+### 腾讯修改的duilib版本
+https://github.com/tencentyun/TIMSDK/tree/master/cross-platform/Windows/IMApp/Basic/duilib
+
