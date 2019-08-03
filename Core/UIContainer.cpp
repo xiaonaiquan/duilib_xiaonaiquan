@@ -705,13 +705,13 @@ namespace DuiLib
 			m_sVerticalScrollBarStyle = pstrValue;
 			EnableScrollBar(TRUE, GetHorizontalScrollBar() != NULL);
 			if( GetVerticalScrollBar() ) {
-				LPCTSTR pStyle = m_pManager->GetStyle(m_sVerticalScrollBarStyle);
-				if( pStyle ) {
+				//LPCTSTR pStyle = m_pManager->GetStyle(m_sVerticalScrollBarStyle);
+				/*if( pStyle ) {
 					GetVerticalScrollBar()->ApplyAttributeList(pStyle);
-				}
-				else {
+					}
+					else {*/
 					GetVerticalScrollBar()->ApplyAttributeList(pstrValue);
-				}
+				//}
 			}
 		}
 		else if( _tcsicmp(pstrName, _T("hscrollbar")) == 0 ) {

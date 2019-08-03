@@ -235,7 +235,7 @@ namespace DuiLib
 		{
 			if( m_pWindow != NULL ) return;
 		}
-		if( event.Type == UIEVENT_SETFOCUS && IsEnabled() ) 
+		if (event.Type == UIEVENT_SETFOCUS || UIEVENT_BUTTONDOWN && IsEnabled())
 		{
 			if( m_pWindow ) return;
 			m_pWindow = new CDateTimeWnd();

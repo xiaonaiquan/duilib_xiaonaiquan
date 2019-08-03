@@ -308,6 +308,7 @@ UINT CWindowWnd::ShowModal()
             ::DispatchMessage(&msg);
         }
         if( msg.message == WM_QUIT ) break;
+	
     }
     ::EnableWindow(hWndParent, TRUE);
     ::SetFocus(hWndParent);

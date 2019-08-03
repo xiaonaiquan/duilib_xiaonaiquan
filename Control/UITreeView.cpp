@@ -21,7 +21,7 @@ namespace DuiLib
 
 		pTreeView = NULL;
 		m_iTreeLavel = 0;
-		m_bIsVisable = TRUE;
+		m_bIsVisable = FALSE;
 		m_bIsCheckBox = FALSE;
 		pParentTreeNode	= NULL;
 
@@ -351,15 +351,19 @@ namespace DuiLib
 
 		bool nRet = TRUE;
 
-		if(pTreeView){
-			CTreeNodeUI* pNode = static_cast<CTreeNodeUI*>(mTreeNodes.GetAt(mTreeNodes.GetSize()-1));
-			if(!pNode || !pNode->GetLastNode())
-				nRet = pTreeView->AddAt(_pTreeNodeUI,GetTreeIndex()+1) >= 0;
-			else nRet = pTreeView->AddAt(_pTreeNodeUI,pNode->GetLastNode()->GetTreeIndex()+1) >= 0;
+		if (pTreeView){
+			CTreeNodeUI* pNode = static_cast<CTreeNodeUI*>(mTreeNodes.GetAt(mTreeNodes.GetSize() - 1));
+			if (!pNode || !pNode->GetLastNode())
+				nRet = pTreeView->AddAt(_pTreeNodeUI, GetTreeIndex() + 1) >= 0;
+			else nRet = pTreeView->AddAt(_pTreeNodeUI, pNode->GetLastNode()->GetTreeIndex() + 1) >= 0;
 		}
 
-		if(nRet)
+		if (nRet)
+		{
+			_pTreeNodeUI->SetVisible(GetFolderButton()->IsSelected());
 			mTreeNodes.Add(_pTreeNodeUI);
+		}
+
 
 		return nRet;
 	}
@@ -486,7 +490,45 @@ namespace DuiLib
 			DWORD clrColor = _tcstoul(pstrValue, &pstr, 16);
 			SetSelItemHotTextColor(clrColor);
 		}
+		else if (_tcsicmp(pstrName, _T("defaultexpand")) == 0)
+		{
+			GetFolderButton()->Selected(_tcscmp(pstrValue, _T("true")) == 0);
+		}
 		else CListContainerElementUI::SetAttribute(pstrName,pstrValue);
+	}
+
+	void CTreeNodeUI::IsAllChildChecked()
+	{
+		bool bIsAllChildChecked = true;
+		bool bIsAllChildUncheck = true;
+		int nCount = GetCountChild();
+		if (nCount > 0)
+		{
+			for (int nIndex = 0; nIndex < nCount; nIndex++)
+			{
+				CTreeNodeUI* pItem = GetChildNode(nIndex);
+				if (!pItem->GetCheckBox()->IsSelected())
+				{
+					bIsAllChildChecked = false;
+				}
+				else
+				{
+					bIsAllChildUncheck = false;
+				}
+			}
+			if (bIsAllChildChecked && !GetCheckBox()->IsSelected())
+			{
+				GetCheckBox()->Selected(true);
+				return;
+			}
+			else if (bIsAllChildUncheck && GetCheckBox()->IsSelected())
+			{
+				GetCheckBox()->Selected(false);
+				return;
+			}
+
+		}
+
 	}
 
 	//************************************
@@ -929,6 +971,8 @@ namespace DuiLib
 			CCheckBoxUI* pCheckBox = (CCheckBoxUI*)pMsg->pSender;
 			CTreeNodeUI* pItem = (CTreeNodeUI*)pCheckBox->GetParent()->GetParent();
 			SetItemCheckBox(pCheckBox->GetCheck(),pItem);
+			if (pItem->GetParentNode() != NULL) 
+				pItem->GetParentNode()->IsAllChildChecked();
 			return TRUE;
 		}
 		return TRUE;
@@ -946,8 +990,8 @@ namespace DuiLib
 		if(pMsg->sType == DUI_MSGTYPE_SELECTCHANGED) {
 			CCheckBoxUI* pFolder = (CCheckBoxUI*)pMsg->pSender;
 			CTreeNodeUI* pItem = (CTreeNodeUI*)pFolder->GetParent()->GetParent();
-			pItem->SetVisibleTag(!pFolder->GetCheck());
-			SetItemExpand(!pFolder->GetCheck(),pItem);
+			pItem->SetVisibleTag(pFolder->GetCheck());
+			SetItemExpand(pFolder->GetCheck(),pItem);
 			return TRUE;
 		}
 		return TRUE;
@@ -965,9 +1009,9 @@ namespace DuiLib
 		if(_tcsicmp(pMsg->sType, DUI_MSGTYPE_TREEITEMDBCLICK) == 0) {
 			CTreeNodeUI* pItem		= static_cast<CTreeNodeUI*>(pMsg->pSender);
 			CCheckBoxUI* pFolder	= pItem->GetFolderButton();
-			pFolder->Selected(!pFolder->IsSelected());
-			pItem->SetVisibleTag(!pFolder->GetCheck());
-			SetItemExpand(!pFolder->GetCheck(),pItem);
+			pFolder->Selected(pFolder->IsSelected());
+			//pItem->SetVisibleTag(!pFolder->GetCheck());
+			//SetItemExpand(!pFolder->GetCheck(),pItem);
 			return TRUE;
 		}
 		return FALSE;
@@ -1025,7 +1069,7 @@ namespace DuiLib
 				for(int nIndex = 0;nIndex < nCount;nIndex++) {
 					CTreeNodeUI* pItem = _TreeNode->GetChildNode(nIndex);
 					pItem->SetVisible(_Expanded);
-					if(pItem->GetCountChild() && !pItem->GetFolderButton()->IsSelected()) {
+					if(pItem->GetCountChild() && pItem->GetFolderButton()->IsSelected()) {
 						SetItemExpand(_Expanded,pItem);
 					}
 				}
@@ -1037,7 +1081,7 @@ namespace DuiLib
 			while(nIndex < nCount) {
 				CTreeNodeUI* pItem = (CTreeNodeUI*)GetItemAt(nIndex);
 				pItem->SetVisible(_Expanded);
-				if(pItem->GetCountChild() && !pItem->GetFolderButton()->IsSelected()) {
+				if(pItem->GetCountChild() && pItem->GetFolderButton()->IsSelected()) {
 					SetItemExpand(_Expanded,pItem);
 				}
 				nIndex++;

@@ -106,6 +106,15 @@
 #include "Control/UIHotKey.h"
 #include "Control/UIFadeButton.h"
 
+
+#include "Control/UIRotateImage.h"
+
+#include <GdiPlus.h>
+//#pragma comment( lib, "GdiPlus.lib" )
+using namespace Gdiplus;
+class  Gdiplus::RectF;
+struct  Gdiplus::GdiplusStartupInput;
+
 #pragma comment( lib, "comctl32.lib" )
 #pragma comment( lib, "GdiPlus.lib" )
 #pragma comment( lib, "Imm32.lib" )

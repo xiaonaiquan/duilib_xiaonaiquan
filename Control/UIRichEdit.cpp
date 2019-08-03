@@ -1747,9 +1747,6 @@ void CRichEditUI::DoInit()
 		if (!m_bEnabled) {
 			m_pTwh->SetColor(m_pManager->GetDefaultDisabledColor());
 		}
-		TxSendMessage(EM_GETEVENTMASK, 0, 0, &lResult);
-		lResult |= ENM_CHANGE;
-		TxSendMessage(EM_SETEVENTMASK, 0, lResult, &lResult);
     }
 	
 	m_bInited= true;
@@ -1805,6 +1802,27 @@ void CRichEditUI::OnTxNotify(DWORD iNotify, void *pv)
 	case EN_SELCHANGE:   
 	case EN_STOPNOUNDO:   
 	case EN_LINK:
+	{
+		if (pv)                        // Fill out NMHDR portion of pv   
+		{
+			//抛出一个notify消息更加方便处理link
+			ENLINK* pEnLink = (ENLINK *)pv;
+			if (pEnLink->msg == WM_LBUTTONDOWN)
+				GetManager()->SendNotify(this, DUI_MSGTYPE_LINK, 0, (LPARAM)pv);
+
+			LONG nId = GetWindowLong(this->GetManager()->GetPaintWindow(), GWL_ID);
+			NMHDR  *phdr = (NMHDR *)pv;
+			phdr->hwndFrom = this->GetManager()->GetPaintWindow();
+			phdr->idFrom = nId;
+			phdr->code = iNotify;
+
+			if (SendMessage(this->GetManager()->GetPaintWindow(), WM_NOTIFY, (WPARAM)nId, (LPARAM)pv))
+			{
+				//hr = S_FALSE;   
+			}
+		}
+	}
+	break;
 	case EN_OBJECTPOSITIONS:   
 	case EN_DRAGDROPDONE:   
 		{

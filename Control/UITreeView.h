@@ -61,6 +61,8 @@ namespace DuiLib
 		DWORD GetSelItemHotTextColor() const;
 		void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
 
+		void	IsAllChildChecked(); 
+
 		CStdPtrArray GetTreeNodes();
 		int			 GetTreeIndex();
 		int			 GetNodeIndex();

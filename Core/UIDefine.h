@@ -313,6 +313,8 @@ protected:                                                                \
 #define  DUI_CTR_TEXTSCROLL						 (_T("TextScroll"))
 
 #define DUI_CTR_COLORPALETTE					  (_T("ColorPalette"))
+
+#define  DUI_CTR_ROTATEIMAGE                     (_T("RotateImage"))
 	///
 	//////////////END控件名称宏定义//////////////////////////////////////////////////
 
