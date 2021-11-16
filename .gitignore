@@ -34,7 +34,7 @@
 *.dep
 *.map
 
+*.suo
+obj/
 ipch/
-Debug/
-Release/
 *.sdf

@@ -22,16 +22,8 @@
 using namespace DuiLib;
 
 #ifdef _DEBUG
-#   ifdef _UNICODE
-#       pragma comment(lib, "..\\Bin\\DuiLib.lib")
-#   else
-#       pragma comment(lib, "..\\Bin\\DuiLib_d.lib")
-#   endif
+	#pragma comment(lib, "..\\Bin\\Debug\\DuiLib_d.lib")
 #else
-#   ifdef _UNICODE
-#       pragma comment(lib, "..\\Bin\\DuiLib.lib")
-#   else
-#       pragma comment(lib, "..\\Bin\\DuiLib_u.lib")
-#   endif
+	#pragma comment(lib, "..\\Bin\\Release\\DuiLib.lib")
 #endif
 // TODO:  在此处引用程序需要的其他头文件
