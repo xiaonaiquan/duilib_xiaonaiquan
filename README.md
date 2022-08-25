@@ -2,7 +2,7 @@
 duilib
 
 ### 腾讯修改的duilib版本
-https://github.com/tencentyun/TIMSDK/tree/master/cross-platform/Windows/IMApp/Basic/duilib
+https://github.com/TencentCloud/TIMSDK/tree/master/Windows
 
 1.修复的菜单无法使用bug
 2.修复鼠标手势的改变
